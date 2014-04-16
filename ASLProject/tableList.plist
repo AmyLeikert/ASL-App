@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Swedish</key>
+	<array>
+		<string>nouns</string>
+		<string>verbs</string>
+	</array>
+	<key>American Sign Language</key>
+	<array>
+		<string>Fingerspelling</string>
+		<string>Numbers</string>
+	</array>
+	<key>Japanese</key>
+	<array>
+		<string>Hiragana</string>
+		<string>Katakana</string>
+	</array>
+</dict>
+</plist>

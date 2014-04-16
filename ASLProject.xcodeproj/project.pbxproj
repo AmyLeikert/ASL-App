@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		245EAFF018FC1ED300ECD162 /* Property List.plist in Resources */ = {isa = PBXBuildFile; fileRef = 245EAFEF18FC1ED300ECD162 /* Property List.plist */; };
+		245EB08218FE0EF000ECD162 /* tableList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 245EB08118FE0EF000ECD162 /* tableList.plist */; };
+		245EB08418FE29A700ECD162 /* japaneseList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 245EB08318FE29A700ECD162 /* japaneseList.plist */; };
 		2493B4C518E5C7BC00BDFE90 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2493B4C418E5C7BC00BDFE90 /* Foundation.framework */; };
 		2493B4C718E5C7BC00BDFE90 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2493B4C618E5C7BC00BDFE90 /* CoreGraphics.framework */; };
 		2493B4C918E5C7BC00BDFE90 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2493B4C818E5C7BC00BDFE90 /* UIKit.framework */; };
@@ -62,6 +65,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		245EAFEF18FC1ED300ECD162 /* Property List.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Property List.plist"; sourceTree = "<group>"; };
+		245EB08118FE0EF000ECD162 /* tableList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = tableList.plist; sourceTree = "<group>"; };
+		245EB08318FE29A700ECD162 /* japaneseList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = japaneseList.plist; sourceTree = "<group>"; };
 		2493B4C118E5C7BC00BDFE90 /* ASLProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ASLProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2493B4C418E5C7BC00BDFE90 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2493B4C618E5C7BC00BDFE90 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -173,6 +179,9 @@
 				2493B4D418E5C7BC00BDFE90 /* DLAppDelegate.m */,
 				2493B4F318E5C83A00BDFE90 /* DLMainTableViewController.h */,
 				2493B4F418E5C83A00BDFE90 /* DLMainTableViewController.m */,
+				245EAFEF18FC1ED300ECD162 /* Property List.plist */,
+				245EB08118FE0EF000ECD162 /* tableList.plist */,
+				245EB08318FE29A700ECD162 /* japaneseList.plist */,
 				2493B4F518E5C83A00BDFE90 /* DLMainTableViewController.xib */,
 				24ABFF8818E5F0860027DBC5 /* DLFingerspellingViewController.h */,
 				24ABFF8918E5F0860027DBC5 /* DLFingerspellingViewController.m */,
@@ -334,9 +343,11 @@
 				24ABFFB018E5F2CE0027DBC5 /* j.jpg in Resources */,
 				24ABFFB118E5F2CE0027DBC5 /* k.jpg in Resources */,
 				24ABFFBB18E5F2CE0027DBC5 /* u.jpg in Resources */,
+				245EAFF018FC1ED300ECD162 /* Property List.plist in Resources */,
 				24ABFFAA18E5F2CE0027DBC5 /* d.jpg in Resources */,
 				24ABFFA818E5F2CE0027DBC5 /* b.jpg in Resources */,
 				24ABFFB618E5F2CE0027DBC5 /* p.jpg in Resources */,
+				245EB08218FE0EF000ECD162 /* tableList.plist in Resources */,
 				24ABFFB718E5F2CE0027DBC5 /* q.jpg in Resources */,
 				2493B4CF18E5C7BC00BDFE90 /* InfoPlist.strings in Resources */,
 				24ABFFAB18E5F2CE0027DBC5 /* e.jpg in Resources */,
@@ -352,6 +363,7 @@
 				24ABFFBD18E5F2CE0027DBC5 /* w.jpg in Resources */,
 				2493B4F718E5C83A00BDFE90 /* DLMainTableViewController.xib in Resources */,
 				24ABFFB318E5F2CE0027DBC5 /* m.jpg in Resources */,
+				245EB08418FE29A700ECD162 /* japaneseList.plist in Resources */,
 				24ABFFA718E5F2CE0027DBC5 /* a.jpg in Resources */,
 				24ABFFAC18E5F2CE0027DBC5 /* f.jpg in Resources */,
 				24ABFF8C18E5F0860027DBC5 /* DLFingerspellingViewController.xib in Resources */,

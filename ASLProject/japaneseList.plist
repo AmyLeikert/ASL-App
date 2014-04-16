@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Numbers</key>
+	<dict>
+		<key>One</key>
+		<dict>
+			<key>romaji</key>
+			<string>ichi</string>
+			<key>kanji</key>
+			<string>一</string>
+			<key>kana</key>
+			<string>いち</string>
+			<key>definition</key>
+			<string>one</string>
+		</dict>
+		<key>Two</key>
+		<dict/>
+		<key>romaji</key>
+		<string>ni</string>
+		<key>kanji</key>
+		<string>二</string>
+		<key>kana</key>
+		<string>に</string>
+		<key>definition</key>
+		<string>two</string>
+	</dict>
+</dict>
+</plist>

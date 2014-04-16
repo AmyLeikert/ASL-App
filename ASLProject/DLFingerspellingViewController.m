@@ -82,11 +82,23 @@
         self.guessImage.layer.borderColor = [[UIColor redColor] CGColor];
         self.guessImage.layer.borderWidth = 5.0;
     }
+    NSMutableArray *ma = [@[@"1", @"2"] mutableCopy];
+    [ma addObject:@"3"];
+    ma = nil;
+    
+    
+    NSMutableString *lastName = [@"Doe" mutableCopy];
+    [self nameWithFirstName:@"Nate" lastName:lastName middleInitial:nil];
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     [textField resignFirstResponder];
     return YES;
 }
+
+- (NSString *)nameWithFirstName:(NSString *)firstName lastName:(NSString *)lastName middleInitial:(NSString *)middleInitial {
+    return nil;
+}
+
 
 @end

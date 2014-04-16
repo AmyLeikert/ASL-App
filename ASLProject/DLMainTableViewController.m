@@ -13,6 +13,7 @@ static NSString * const kCellReuseIdentifier = @"cellIdentifier";
 
 @implementation DLMainTableViewController
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -21,11 +22,11 @@ static NSString * const kCellReuseIdentifier = @"cellIdentifier";
     [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor whiteColor]}];
        
     self.title = @"American Sign Language";
+    
 }
 
 - (id)initWithStyle:(UITableViewStyle)style {
     self = [super initWithStyle:style];
-    
     if (self) {
         [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:kCellReuseIdentifier];
         
@@ -36,17 +37,77 @@ static NSString * const kCellReuseIdentifier = @"cellIdentifier";
     return self;
 }
 
+
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
+    NSString *path = [[NSBundle mainBundle] pathForResource:
+                      @"tableList" ofType:@"plist"];
+    
+    NSDictionary *dictionary = [[NSDictionary alloc] initWithContentsOfFile:path];
+    return [dictionary count];
+    
+//    NSInteger numberOfSections = 3;
+//    return numberOfSections;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 1;
+    NSInteger numberOfRows;
+    
+    NSString *path = [[NSBundle mainBundle] pathForResource:
+                      @"tableList" ofType:@"plist"];
+    
+    NSDictionary *dictionary = [[NSDictionary alloc] initWithContentsOfFile:path];
+    NSArray *asl = dictionary[@"American Sign Language"];
+    NSArray *swedish = dictionary[@"Swedish"];
+    NSArray *japanese = dictionary[@"Japanese"];
+    
+    
+    
+    switch (section) {
+        case 0:
+            // numberOfRows = 2;
+            numberOfRows = [asl count];
+            break;
+        case 1:
+            //numberOfRows = 1;
+            numberOfRows = [swedish count];
+            break;
+        case 2:
+            // numberOfRows = 4;
+            numberOfRows = [japanese count];
+            break;
+        default:
+            numberOfRows = 0;
+            break;
+    }
+    return numberOfRows;
 }
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    NSString *titleForHeader;
+    titleForHeader = @"Amys App";
+    switch (section) {
+        case 0:
+            titleForHeader = @"American Sign Language";
+            break;
+        case 1:
+            titleForHeader = @"Svenska";
+           break;
+        case 2:
+            titleForHeader = @"日本語";
+            break;
+        default:
+            titleForHeader = @"X";
+            break;
+    }
+    
+    
+    return titleForHeader;
+}
+
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kCellReuseIdentifier forIndexPath:indexPath];
-    
+
     cell.textLabel.text = @"Fingerspelling";
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     return cell;
